@@ -23,9 +23,27 @@
 
 ### Biên dịch Verilog với iverilog:
 
-iverilog -o <file_name_output> <file_name>.v tb_<file_name>.v
-ex: iverilog -o sim full_adder.v half_adder.v tb_full_adder.v
-
-gtkwave <vcd_name>.vcd
-ex: gtkwave wave_form.vcd
-
+  - Biên dịch:
+    ```bash
+    iverilog -o <file_name_output> <file_name>.v tb_<file_name>.v
+    ```
+    **Ví dụ:**
+    ```bash
+    iverilog -o sim full_adder.v half_adder.v tb_full_adder.v
+    ```
+  - Chạy mô phỏng với vvp:
+    ```bash
+    vvp <file_name_output>
+    ```
+    **Ví dụ:**
+    ```bash
+    vvp sim
+    ```
+  - Xem Sóng với GTKWave:
+    ```bash
+    gtkwave <vcd_name>.vcd
+    ```
+    **Ví dụ:**
+    ```bash
+    gtkwave wave_form.vcd
+    ```
