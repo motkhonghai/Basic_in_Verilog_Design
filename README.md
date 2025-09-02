@@ -47,3 +47,4 @@
     ```bash
     gtkwave wave_form.vcd
     ```
+
